@@ -37,6 +37,9 @@ public class User {
     private String address;
     private String profilePictureUrl;
 
+    @Enumerated(EnumType.STRING)
+    private Role role =Role.CUSTOMER;
+
     @CreationTimestamp
     private LocalDateTime createdAt;
 
